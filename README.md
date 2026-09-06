@@ -1,16 +1,33 @@
-# SmartbizAi
+# SmartBiz AI
+
+Angular frontend and Express backend for the SmartBiz AI business workspace.
+
+## Frontend
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.27.
 
-## Development server
-
-To start a local development server, run:
+### Development server
 
 ```bash
-ng serve
+npm start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Once the server is running, open `http://localhost:4200/`.
+
+## Backend (Phase 1)
+
+The API lives in `backend/` and is a separate Node.js application.
+
+```bash
+cd backend
+npm install
+copy .env.example .env
+npm run dev
+```
+
+Health check: `GET http://localhost:4000/api/health`
+
+See [backend/README.md](backend/README.md) for environment variables, PostgreSQL setup, and architecture notes.
 
 ## Code scaffolding
 
@@ -57,3 +74,4 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+"# samrtbiz" 
